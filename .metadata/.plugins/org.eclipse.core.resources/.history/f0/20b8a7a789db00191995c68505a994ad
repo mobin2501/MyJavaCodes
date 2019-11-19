@@ -1,0 +1,11 @@
+package eularProject;
+
+public class NonAbundantSums {
+	public static void main(String args[]) {
+		for(int i=1;i<28123;i++) {
+			
+		}
+		
+	}
+
+}

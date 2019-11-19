@@ -1,0 +1,9 @@
+package eularProject;
+
+public class LexicographicPermutations {
+	public static void main(String args[]) {
+		int[] num= {0,1,2};
+		System.out.print(num[2]);
+	}
+
+}

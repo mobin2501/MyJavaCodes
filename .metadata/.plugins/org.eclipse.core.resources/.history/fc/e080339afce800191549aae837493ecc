@@ -1,0 +1,29 @@
+package eularProject;
+import java.util.*;
+
+public class LexicographicPermutations {
+	public static void main(String args[]) {
+		String str="abc";
+		permutation(str,0,str.length()-1);
+		
+	}
+	static void permutation(String st,int l,int r) {
+		for(int i=l;i<=r;i++) {
+			st=swap(st,l,i);
+			//permutation(st,l+1,i);
+			st=swap(st,l+1,i);
+			System.out.println(st);
+		
+		}
+		
+	}
+	static String swap(String st,int a,int b) {
+		char[] c=st.toCharArray();
+		char temp=c[a];
+		c[a]=c[b];
+		c[b]=temp;
+		
+		return String.valueOf(c);
+	}
+
+}

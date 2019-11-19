@@ -1,0 +1,15 @@
+package eularProject;
+import java.math.*;
+
+public class ReciprocalCycles {
+	public static void main(String args[]) {
+		BigDecimal bd=BigDecimal.ONE;
+		bd.divide(BigDecimal.valueOf(2));
+		System.out.println(bd);
+		/*for(int i=2;i<=10;i++) {
+			
+			
+		}*/
+	}
+
+}

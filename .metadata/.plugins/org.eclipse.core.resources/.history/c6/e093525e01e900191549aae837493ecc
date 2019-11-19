@@ -1,0 +1,19 @@
+package eularProject;
+import java.util.*;
+import java.math.*;
+
+public class Fibonacci1000 {
+	public static void main(String args[]) {
+		ArrayList<BigInteger> array=new ArrayList<BigInteger>();
+		array.add(BigInteger.ZERO);
+		array.add(BigInteger.ONE);
+		for(int i=0;i<1000;i++) {
+			BigInteger c=BigInteger.ZERO;
+			c=c.add(array.get(i));
+			c=c.add(array.get(i+1));
+			array.add(c);
+		}
+		System.out.print(array.get(1001).bitCount());
+	}
+
+}

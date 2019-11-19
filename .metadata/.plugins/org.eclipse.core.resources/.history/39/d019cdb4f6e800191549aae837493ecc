@@ -1,0 +1,8 @@
+package eularProject;
+
+public class LexicographicPermutations {
+	public static void main(String args[]) {
+		
+	}
+
+}

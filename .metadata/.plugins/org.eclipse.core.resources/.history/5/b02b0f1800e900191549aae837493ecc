@@ -1,0 +1,15 @@
+package eularProject;
+import java.util.*;
+
+public class Fibonacci1000 {
+	public static void main(String args[]) {
+		ArrayList<Integer> array=new ArrayList<Integer>();
+		array.add(0);
+		array.add(1);
+		for(int i=0;i<100;i++) {
+			array.add(array.get(i)+array.get(i+1));
+		}
+		System.out.print(array.get(100));
+	}
+
+}

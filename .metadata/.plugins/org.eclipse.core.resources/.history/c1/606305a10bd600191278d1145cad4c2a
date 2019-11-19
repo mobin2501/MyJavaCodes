@@ -1,0 +1,20 @@
+package eularProject;
+import java.io.*;
+import java.util.*;
+
+public class NameScores {
+	@SuppressWarnings("resource")
+	public static void main(String args[]) throws IOException  {
+		//String[] str=new String[17487];
+		String str=new String();
+		File file=new File("H:\\Eular\\p022_names.txt");
+		Scanner s=new Scanner(file).useDelimiter("\\W");
+		while(s.hasNext()) {
+			str.equals(s.hasNext());
+			System.out.println(str);
+		}
+		s.close();
+		
+	}
+
+}

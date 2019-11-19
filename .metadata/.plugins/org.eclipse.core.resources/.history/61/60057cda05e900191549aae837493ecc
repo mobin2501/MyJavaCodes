@@ -1,0 +1,26 @@
+package eularProject;
+import java.math.*;
+
+public class ReciprocalCycles {
+	public static void main(String args[]) {
+		BigDecimal bd=BigDecimal.ONE;
+		for(int i=1;i<=1000;i++) {
+			System.out.println("1/"+i+"= ");
+			try {
+				bd=bd.divide(BigDecimal.valueOf(i));
+				System.out.println(bd);
+			}
+			catch(ArithmeticException e){
+				i=i+1;
+			}
+			
+		}
+		
+		
+		/*for(int i=2;i<=10;i++) {
+			
+			
+		}*/
+	}
+
+}

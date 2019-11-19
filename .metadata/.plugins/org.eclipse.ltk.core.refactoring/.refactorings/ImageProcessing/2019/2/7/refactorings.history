@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;javaImage.BufferedImage.java&apos; to &apos;BuffImage.java&apos;&#x0D;&#x0A;- Original project: &apos;ImageProcessing&apos;&#x0D;&#x0A;- Original element: &apos;javaImage.BufferedImage.java&apos;&#x0D;&#x0A;- Renamed element: &apos;javaImage.BuffImage.java&apos;" description="Rename compilation unit &apos;BufferedImage.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;javaImage{BufferedImage.java" name="BuffImage.java" references="false" stamp="1550117136825" version="1.0"/>
+</session>

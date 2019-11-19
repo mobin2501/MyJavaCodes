@@ -1,0 +1,29 @@
+package eularProject;
+import java.util.*;
+
+public class NonAbundantSums {
+	public static void main(String args[]) {
+		ArrayList<Integer> abu=new ArrayList<Integer>();
+		for(int i=1;i<=28123;i++) {
+			if(abundant(i)==true) {
+				abu.add(i);
+			}
+		}
+		System.out.print(abu.size());
+	}
+	static boolean abundant(int i) {
+		int sum=0;
+		for(int j=1;j<=i/2;j++) {
+			if(i%j==0) {
+				sum=sum+j;
+			}
+		}
+		if(sum>=i) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}

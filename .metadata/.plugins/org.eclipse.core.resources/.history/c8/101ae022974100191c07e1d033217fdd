@@ -1,0 +1,21 @@
+package cse2201;
+
+public class MergeSort {
+	public static void merges(int[] arr,int l,int r) {
+		if(r>l) {
+			int m=(l+r)/2;
+			merges(arr,l,m);
+			merges(arr,m+1,r);
+			System.out.println(arr);
+		}
+		
+		
+		
+	}
+	public static void main(String args[]) {
+		int[] arr= {12,9,11,2,1,7};
+		merges(arr,0,arr.length);
+		
+	}
+
+}

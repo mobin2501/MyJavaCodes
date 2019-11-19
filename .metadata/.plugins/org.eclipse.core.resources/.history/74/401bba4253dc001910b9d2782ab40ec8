@@ -1,0 +1,36 @@
+package eularProject;
+import java.util.*;
+
+public class NonAbundantSums {
+	public static void main(String args[]) {
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		for(int i=1;i<=28123;i++) {
+			int sum=0;
+			for(int j=1;j<i;j++) {	
+				if(i%j==0) {
+					sum=sum+j;
+					
+				}
+			}
+			if(sum>i) {
+				al.add(i);
+			}
+			
+		}
+		System.out.println(al);
+		ArrayList<Integer> ab=new ArrayList<Integer>();
+		for(int i=0;i<al.size();i++) {
+			for(int j=0;j<al.size();j++) {
+				int s=al.get(i)+al.get(j);
+				if(s<=28123) {
+					ab.add(s);
+				}
+			}
+			
+		}
+		//ArrayList<Integer> abn=new ArrayList<Integer>();
+		Collections.sort(ab);
+		System.out.println(ab.indexOf(50));
+	}
+
+}

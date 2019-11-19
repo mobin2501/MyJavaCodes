@@ -1,0 +1,29 @@
+package eularProject;
+import java.io.*;
+import java.util.*;
+
+public class NameScores {
+	@SuppressWarnings("resource")
+	public static void main(String args[]) throws IOException  {
+		/*InputStream is=new FileInputStream("H:\\Eular\\p022_names.txt");
+		BufferedReader bf=new BufferedReader(new InputStreamReader(is));
+		String line=bf.readLine();
+		StringBuilder sb=new StringBuilder();
+		while(line!=null) {
+			sb.append(line).append("\n");
+			line=bf.readLine();
+		}*/
+		String[] str=new String[17487];
+		File file=new File("H:\\Eular\\p022_names.txt");
+		Scanner s=new Scanner(file).useDelimiter("\\W");
+		int i=0;
+		while(s.hasNext()) {
+			System.out.println(s.next());
+			str[i]=s.next()args.toString();
+			i++;
+		}
+		s.close();
+		
+	}
+
+}
